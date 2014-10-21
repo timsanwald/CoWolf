@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.sirius.componentization">
+      <component
+            class="de.uni_stuttgart.iste.cowolf.core.sirius.editor.Activator"
+            id="de.uni_stuttgart.iste.cowolf.core.sirius.editor"
+            name="ModelAssociation">
+      </component>
+   </extension>
+
+</plugin>

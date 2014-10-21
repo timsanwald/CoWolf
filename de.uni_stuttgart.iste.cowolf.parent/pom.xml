@@ -635,7 +635,11 @@
 		
 		<!-- build SiLift Rulebase Maven plugin -->
 		<!-- <module>../silift-recognition-rules-maven-plugin</module> -->
+
 		
+		<module>
+			../de.uni_stuttgart.iste.cowolf.core.sirius.editor
+		</module>
 	</modules>
 
 </project>
