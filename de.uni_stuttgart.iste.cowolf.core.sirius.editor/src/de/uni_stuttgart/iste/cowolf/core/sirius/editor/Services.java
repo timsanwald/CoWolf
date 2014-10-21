@@ -41,4 +41,10 @@ public class Services {
 		}		
 		return true;
 	}
+	
+	private static boolean oldAssociations = true;
+	
+	public boolean showOldAssociations() {
+		return oldAssociations;
+	}
 }

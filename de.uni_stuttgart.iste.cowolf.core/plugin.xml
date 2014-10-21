@@ -13,5 +13,11 @@
             class="de.uni_stuttgart.iste.cowolf.core.ModelAssociation.ModelAssociationPackage"
             genModel="model/ModelAssociation.genmodel"/>
    </extension>
+   <extension
+         point="de.uni_stuttgart.iste.cowolf.model.architectureModelManagerExtension">
+      <architectureModelManager
+            class="de.uni_stuttgart.iste.cowolf.core.ModelAssociation.ModelAssociationModelManager">
+      </architectureModelManager>
+   </extension>
 
 </plugin>

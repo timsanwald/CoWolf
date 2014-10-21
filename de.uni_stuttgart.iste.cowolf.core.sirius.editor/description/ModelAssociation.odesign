@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="ModelAssociation" version="8.1.0">
-  <ownedViewpoints name="Model association" modelFileExtension="modelassociation">
-    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="ModelAssociation" domainClass="ModelAssociation.ModelAssociation">
+  <ownedViewpoints name="Model association" label="Model Association" modelFileExtension="modelassociation">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="ModelAssociation" initialisation="true" domainClass="ModelAssociation.ModelAssociation">
       <metamodel href="http://cowolf.model_association/#/"/>
       <defaultLayer name="Default">
         <edgeMappings name="versiondiff" sourceMapping="//@ownedViewpoints[name='Model%20association']/@ownedRepresentations[name='ModelAssociation']/@defaultLayer/@containerMappings[name='']/@subNodeMappings[name='']" targetMapping="//@ownedViewpoints[name='Model%20association']/@ownedRepresentations[name='ModelAssociation']/@defaultLayer/@containerMappings[name='']/@subNodeMappings[name='']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="ModelAssociation.Association" useDomainElement="true">
           <style lineStyle="dot" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
-            <centerLabelStyleDescription labelFormat="italic" showIcon="false" labelExpression="(old)">
+            <centerLabelStyleDescription labelFormat="italic" showIcon="false" labelExpression="(deprecated)">
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             </centerLabelStyleDescription>
           </style>
           <conditionnalStyles predicateExpression="[restrictAssociations(self)/]">
-            <style lineStyle="dot" sizeComputationExpression="2">
+            <style lineStyle="dot" sizeComputationExpression="3">
               <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
               <centerLabelStyleDescription showIcon="false">
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -36,7 +36,7 @@
               <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             </style>
           </subNodeMappings>
-          <style xsi:type="style:FlatContainerStyleDescription" showIcon="false" labelExpression="feature:model" labelAlignment="LEFT">
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelFormat="bold" showIcon="false" labelExpression="feature:model">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
