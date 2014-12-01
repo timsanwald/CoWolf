@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="ModelAssociation" version="8.1.0">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="ModelAssociation" version="8.1.0">
   <ownedViewpoints name="Model association" label="Model Association" modelFileExtension="modelassociation">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="ModelAssociation" initialisation="true" domainClass="ModelAssociation.ModelAssociation">
       <metamodel href="http://cowolf.model_association/#/"/>
+      <filters xsi:type="filter:CompositeFilterDescription" name="Hide old associations">
+        <filters xsi:type="filter:MappingFilter" mappings="//@ownedViewpoints[name='Model%20association']/@ownedRepresentations[name='ModelAssociation']/@defaultLayer/@edgeMappings[name='versiondiff']" semanticConditionExpression="[restrictAssociations(self)/]"/>
+      </filters>
       <defaultLayer name="Default">
-        <edgeMappings name="versiondiff" sourceMapping="//@ownedViewpoints[name='Model%20association']/@ownedRepresentations[name='ModelAssociation']/@defaultLayer/@containerMappings[name='']/@subNodeMappings[name='']" targetMapping="//@ownedViewpoints[name='Model%20association']/@ownedRepresentations[name='ModelAssociation']/@defaultLayer/@containerMappings[name='']/@subNodeMappings[name='']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="ModelAssociation.Association" useDomainElement="true">
+        <edgeMappings name="versiondiff" sourceMapping="//@ownedViewpoints[name='Model%20association']/@ownedRepresentations[name='ModelAssociation']/@defaultLayer/@containerMappings[name='']/@subNodeMappings[name='ModelVersions']" targetMapping="//@ownedViewpoints[name='Model%20association']/@ownedRepresentations[name='ModelAssociation']/@defaultLayer/@containerMappings[name='']/@subNodeMappings[name='ModelVersions']" targetFinderExpression="feature:target" sourceFinderExpression="feature:source" domainClass="ModelAssociation.Association" useDomainElement="true">
           <style lineStyle="dot" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             <centerLabelStyleDescription labelFormat="italic" showIcon="false" labelExpression="(deprecated)">
@@ -20,7 +23,7 @@
             </style>
           </conditionnalStyles>
         </edgeMappings>
-        <edgeMappings sourceMapping="//@ownedViewpoints[name='Model%20association']/@ownedRepresentations[name='ModelAssociation']/@defaultLayer/@containerMappings[name='']/@subNodeMappings[name='']" targetMapping="//@ownedViewpoints[name='Model%20association']/@ownedRepresentations[name='ModelAssociation']/@defaultLayer/@containerMappings[name='']/@subNodeMappings[name='']" targetFinderExpression="[getSuccessor(self)/]">
+        <edgeMappings sourceMapping="//@ownedViewpoints[name='Model%20association']/@ownedRepresentations[name='ModelAssociation']/@defaultLayer/@containerMappings[name='']/@subNodeMappings[name='ModelVersions']" targetMapping="//@ownedViewpoints[name='Model%20association']/@ownedRepresentations[name='ModelAssociation']/@defaultLayer/@containerMappings[name='']/@subNodeMappings[name='ModelVersions']" targetFinderExpression="[getSuccessor(self)/]">
           <style targetArrow="InputClosedArrow" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -29,7 +32,7 @@
           </style>
         </edgeMappings>
         <containerMappings domainClass="ModelAssociation.Model">
-          <subNodeMappings semanticCandidatesExpression="feature:versions" domainClass="ModelAssociation.ModelVersion">
+          <subNodeMappings name="ModelVersions" semanticCandidatesExpression="feature:versions" domainClass="ModelAssociation.ModelVersion">
             <style xsi:type="style:SquareDescription" showIcon="false" labelExpression="feature:message" sizeComputationExpression="1" labelPosition="node" resizeKind="EAST_WEST" width="15" height="5">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>

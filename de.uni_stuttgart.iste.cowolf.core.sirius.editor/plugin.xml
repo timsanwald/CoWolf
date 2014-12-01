@@ -9,5 +9,12 @@
             name="ModelAssociation">
       </component>
    </extension>
+   <extension
+         point="org.eclipse.sirius.externalJavaAction">
+      <javaActions
+            actionClass="de.uni_stuttgart.iste.cowolf.core.sirius.editor.operations.CreateVersion"
+            id="de.uni_stuttgart.iste.cowolf.core.sirius.editor.operations.createVersion">
+      </javaActions>
+   </extension>
 
 </plugin>
