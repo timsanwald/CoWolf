@@ -11,5 +11,5 @@ Import-Package: de.uni_stuttgart.iste.cowolf.evolution.lqn,
  de.uni_stuttgart.iste.cowolf.model.sequence_diagram,
  de.uni_stuttgart.iste.cowolf.transformation,
  org.eclipse.emf.ecore.resource,
- org.slf4j;version="1.7.7"
+ org.slf4j
 Bundle-Vendor: University of Stuttgart Institute of Software Technology
