@@ -640,7 +640,13 @@
 		<module>
 			../de.uni_stuttgart.iste.cowolf.core.sirius.editor
 		</module>
-		<module>../de.uni_stuttgart.iste.cowolf.analyze</module>
+		
+		
+		
+		
+		
+		
+		
 	</modules>
 
 </project>

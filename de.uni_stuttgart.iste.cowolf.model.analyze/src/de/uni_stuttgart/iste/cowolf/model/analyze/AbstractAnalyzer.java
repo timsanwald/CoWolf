@@ -1,4 +1,5 @@
-package de.uni_stuttgart.iste.cowolf.analyze;
+package de.uni_stuttgart.iste.cowolf.model.analyze;
+
 
 import java.util.Map;
 
