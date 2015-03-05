@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: CoWolf Analyze
+Bundle-SymbolicName: de.uni_stuttgart.iste.cowolf.analyze;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: de.uni_stuttgart.iste.cowolf.analyze.Activator
+Require-Bundle: org.eclipse.core.runtime
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: de.uni_stuttgart.iste.cowolf.model,
+ org.eclipse.emf.ecore.resource
