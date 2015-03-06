@@ -7,8 +7,8 @@
       <page
       		category="de.uni_stuttgart.iste.cowolf.ui.model.modelPage"
             name="Fault Tree"
-            class="de.uni_stuttgart.iste.cowolf.ui.model.fault_tree.preferences.FaultTreePreferencePage"
-            id="de.uni_stuttgart.iste.cowolf.ui.model.fault_tree.preferences.FaultTreePreferencePage">
+            class="de.uni_stuttgart.iste.cowolf.ui.analyze.fault_tree.xfta.preferences.FaultTreePreferencePage"
+            id="de.uni_stuttgart.iste.cowolf.ui.analyze.fault_tree.xfta.preferences.FaultTreePreferencePage">
       </page>
    </extension>
    <extension

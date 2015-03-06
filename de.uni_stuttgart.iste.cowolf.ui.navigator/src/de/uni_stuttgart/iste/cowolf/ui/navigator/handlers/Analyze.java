@@ -79,8 +79,7 @@ public class Analyze implements IHandler {
 				AbstractQoSModelManager qosModelManager = (AbstractQoSModelManager) modelManager;
 				HashMap<String, Object> properties = new HashMap<String, Object>();
 				// Get Analyze method
-				AbstractAnalyzer analyzer = chooseAnalyzer(qosModelManager); 
-				LOGGER.debug("Found Analyzer? " + analyzer.toString());
+				AbstractAnalyzer analyzer = chooseAnalyzer(qosModelManager);
 				AbstractQoSAnalyzeWizard wizard = AnalyzeWizardHandler.getInstance().getQosAnalyzeWizard(analyzer);
 	
 				if (wizard != null) {
@@ -134,7 +133,7 @@ public class Analyze implements IHandler {
 	}
 	
 	public AbstractAnalyzer chooseAnalyzer(AbstractQoSModelManager manager) {
-		String id = "de.uni_stuttgart.iste.cowolf.model.qosModelManagerExtension.analyzer";
+		String id = "de.uni_stuttgart.iste.cowolf.analyze.qosModelAnalyzer";
 		List<AbstractAnalyzer> allMethods = this.createExecuteableExtensions(id, "class", AbstractAnalyzer.class);
 		List<AbstractAnalyzer> methods = new LinkedList<AbstractAnalyzer>();
 		for (AbstractAnalyzer analyzer : allMethods) {
