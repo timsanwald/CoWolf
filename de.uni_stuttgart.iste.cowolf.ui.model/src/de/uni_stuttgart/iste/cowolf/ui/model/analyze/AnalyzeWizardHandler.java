@@ -10,7 +10,7 @@ import org.eclipse.core.runtime.Platform;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.uni_stuttgart.iste.cowolf.model.AbstractQoSModelManager;
+import de.uni_stuttgart.iste.cowolf.model.analyze.AbstractAnalyzer;
 
 public class AnalyzeWizardHandler {
 	
@@ -31,9 +31,9 @@ public class AnalyzeWizardHandler {
 	/**
 	 * @return the qosAnalyzeWizards
 	 */
-	public AbstractQoSAnalyzeWizard getQosAnalyzeWizard(final AbstractQoSModelManager modelManager) {
+	public AbstractQoSAnalyzeWizard getQosAnalyzeWizard(final AbstractAnalyzer analyzer) {
 		for (AbstractQoSAnalyzeWizard wizard : this.qosAnalyzeWizards) {
-			if (wizard.isManaged(modelManager)) {
+			if (wizard.isManaged(analyzer)) {
 				return wizard;
 			}
 		}

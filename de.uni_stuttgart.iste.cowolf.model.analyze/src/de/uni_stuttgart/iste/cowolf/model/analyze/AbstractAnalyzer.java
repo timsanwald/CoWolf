@@ -40,4 +40,9 @@ public abstract class AbstractAnalyzer {
 	 * Returns a representative description of the analyzer.
 	 */
 	public abstract String getDescription();
+
+	@Override
+	public String toString() {
+		return this.getName() + " - " + getDescription();
+	}
 }

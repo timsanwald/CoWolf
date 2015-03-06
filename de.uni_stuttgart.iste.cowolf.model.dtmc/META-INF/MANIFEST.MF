@@ -6,7 +6,6 @@ Bundle-ClassPath: .
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Export-Package: de.uni_stuttgart.iste.cowolf.model.dtmc,
- de.uni_stuttgart.iste.cowolf.model.dtmc.export,
  de.uni_stuttgart.iste.cowolf.model.dtmc.impl,
  de.uni_stuttgart.iste.cowolf.model.dtmc.util,
  de.uni_stuttgart.iste.cowolf.model.dtmc.validation
