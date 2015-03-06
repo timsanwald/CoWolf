@@ -4,7 +4,7 @@
    <extension
          point="de.uni_stuttgart.iste.cowolf.ui.model.qosAnalyzeWizardExtension">
       <qosAnalyzeWizard
-            class="de.uni_stuttgart.iste.cowolf.skeleton.ui.analyze.analyze.AnalyzeWizard">
+            class="de.uni_stuttgart.iste.cowolf.skeleton.ui.analyze.AnalyzeWizard">
       </qosAnalyzeWizard>
    </extension>
 

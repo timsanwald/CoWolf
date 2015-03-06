@@ -5,8 +5,8 @@ import java.util.HashMap;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.jface.wizard.Wizard;
 
+import de.uni_stuttgart.iste.cowolf.analyze.AbstractAnalyzer;
 import de.uni_stuttgart.iste.cowolf.model.AbstractQoSModelManager;
-import de.uni_stuttgart.iste.cowolf.model.analyze.AbstractAnalyzer;
 
 public abstract class AbstractQoSAnalyzeWizard extends Wizard {
 

@@ -10,7 +10,7 @@ import org.eclipse.core.runtime.Platform;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.uni_stuttgart.iste.cowolf.model.analyze.AbstractAnalyzer;
+import de.uni_stuttgart.iste.cowolf.analyze.AbstractAnalyzer;
 
 public class AnalyzeWizardHandler {
 	

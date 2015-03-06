@@ -2,9 +2,9 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension
-         point="de.uni_stuttgart.iste.cowolf.model.qosModelManagerExtension.analyzer">
+         point="de.uni_stuttgart.iste.cowolf.analyze.qosModelAnalyzer">
       <analyzer
-            class="de.uni_stuttgart.iste.cowolf.model.analyze.dtmc.prism.DTMCPrismAnalyzer">
+            class="de.uni_stuttgart.iste.cowolf.analyze.dtmc.prism.DTMCPrismAnalyzer">
       </analyzer>
    </extension>
 

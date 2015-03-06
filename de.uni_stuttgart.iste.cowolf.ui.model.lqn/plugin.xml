@@ -5,15 +5,15 @@
          point="org.eclipse.ui.preferencePages">
       <page
             category="de.uni_stuttgart.iste.cowolf.ui.model.modelPage"
-            class="de.uni_stuttgart.iste.cowolf.ui.model.lqn.preferences.LQNPreferencePage"
-            id="de.uni_stuttgart.iste.cowolf.ui.model.lqn.preferences.LQNPreferencePage"
-            name="LQN">
+            class="de.uni_stuttgart.iste.cowolf.ui.analyze.lqn.lqnsolver.preferences.LQNSolverPreferencePage"
+            id="de.uni_stuttgart.iste.cowolf.ui.analyze.lqn.lqnsolver.preferences.LQNSolverPreferencePage"
+            name="LQN - LQNSolver">
       </page>
    </extension>
    <extension
          point="de.uni_stuttgart.iste.cowolf.ui.model.qosAnalyzeWizardExtension">
      <qosAnalyzeWizard
-            class="de.uni_stuttgart.iste.cowolf.ui.model.lqn.analyze.LQNAnalyzeWizard">
+            class="de.uni_stuttgart.iste.cowolf.ui.analyze.lqn.lqnsolver.LQNAnalyzeWizard">
      </qosAnalyzeWizard>
    </extension>
 

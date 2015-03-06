@@ -5,24 +5,24 @@
          point="org.eclipse.ui.preferencePages">
       <page
             category="de.uni_stuttgart.iste.cowolf.ui.model.modelPage"
-            class="de.uni_stuttgart.iste.cowolf.ui.model.dtmc.analyze.prism.preference.DTMCPrismPreferencePage"
-            id="de.uni_stuttgart.iste.cowolf.ui.model.dtmc.analyze.prism.preference.dtmcPrismPage"
-            name="DTMC">
+            class="de.uni_stuttgart.iste.cowolf.ui.analyze.dtmc.prism.preference.DTMCPrismPreferencePage"
+            id="de.uni_stuttgart.iste.cowolf.ui.analyze.dtmc.prism.preference.dtmcPrismPage"
+            name="DTMC - PRISM">
       </page>
    </extension>
    <extension
          point="de.uni_stuttgart.iste.cowolf.ui.model.qosAnalyzeWizardExtension">
       <qosAnalyzeWizard
-            class="de.uni_stuttgart.iste.cowolf.ui.model.dtmc.analyze.prism.wizard.DTMCPrismAnalyzeWizard">
+            class="de.uni_stuttgart.iste.cowolf.ui.analyze.dtmc.prism.wizard.DTMCPrismAnalyzeWizard">
       </qosAnalyzeWizard>
    </extension>
    <extension
          point="org.eclipse.ui.exportWizards">
       <wizard
             category="de.uni_stuttgart.iste.cowolf.ui.category.wizards/de.uni_stuttgart.iste.cowolf.ui.category.wizards.model"
-            class="de.uni_stuttgart.iste.cowolf.ui.model.dtmc.analyze.prism.export.DtmcPrismExportWizard"
+            class="de.uni_stuttgart.iste.cowolf.ui.analyze.dtmc.prism.export.DtmcPrismExportWizard"
             icon="icons/logo_wulf_15x15.png"
-            id="de.uni_stuttgart.iste.cowolf.ui.model.dtmc.analyze.prism"
+            id="de.uni_stuttgart.iste.cowolf.ui.analyze.dtmc.prism"
             name="DTMC to PRISM">
       </wizard>
    </extension>

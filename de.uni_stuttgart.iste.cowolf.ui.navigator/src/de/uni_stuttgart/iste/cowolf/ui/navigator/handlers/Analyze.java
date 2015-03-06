@@ -1,10 +1,8 @@
 package de.uni_stuttgart.iste.cowolf.ui.navigator.handlers;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Vector;
 
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
@@ -30,10 +28,10 @@ import org.eclipse.ui.dialogs.ElementListSelectionDialog;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import de.uni_stuttgart.iste.cowolf.analyze.AbstractAnalyzer;
 import de.uni_stuttgart.iste.cowolf.model.AbstractModelManager;
 import de.uni_stuttgart.iste.cowolf.model.AbstractQoSModelManager;
 import de.uni_stuttgart.iste.cowolf.model.ModelRegistry;
-import de.uni_stuttgart.iste.cowolf.model.analyze.AbstractAnalyzer;
 import de.uni_stuttgart.iste.cowolf.ui.model.analyze.AbstractQoSAnalyzeWizard;
 import de.uni_stuttgart.iste.cowolf.ui.model.analyze.AnalyzeWizardHandler;
 import de.uni_stuttgart.iste.cowolf.ui.model.analyze.FileOpenAnalysisListener;
@@ -137,10 +135,17 @@ public class Analyze implements IHandler {
 	
 	public AbstractAnalyzer chooseAnalyzer(AbstractQoSModelManager manager) {
 		String id = "de.uni_stuttgart.iste.cowolf.model.qosModelManagerExtension.analyzer";
-		List<AbstractAnalyzer> methods = this.createExecuteableExtensions(id, "class", AbstractAnalyzer.class);
-		LOGGER.debug(Arrays.toString(methods.toArray()));
+		List<AbstractAnalyzer> allMethods = this.createExecuteableExtensions(id, "class", AbstractAnalyzer.class);
+		List<AbstractAnalyzer> methods = new LinkedList<AbstractAnalyzer>();
+		for (AbstractAnalyzer analyzer : allMethods) {
+			if (analyzer.isManaged(manager)) {
+				methods.add(analyzer);
+			}
+		}
+		
 		if (methods.isEmpty()) {
 			return null;
+			//TODO
 		}/* else if (methods.size() == 1) {
 			return methods.get(0);
 		}*/ else {

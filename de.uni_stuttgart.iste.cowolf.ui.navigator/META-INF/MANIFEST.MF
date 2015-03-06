@@ -59,7 +59,7 @@ Require-Bundle: org.eclipse.ui,
  de.uni_stuttgart.iste.cowolf.ui.model,
  de.uni_stuttgart.iste.cowolf.core
 Bundle-ClassPath: .
-Import-Package: de.uni_stuttgart.iste.cowolf.model.analyze,
+Import-Package: de.uni_stuttgart.iste.cowolf.analyze,
  org.eclipse.emf.common.util,
  org.eclipse.emf.ecore.resource,
  org.eclipse.emf.ecore.resource.impl,

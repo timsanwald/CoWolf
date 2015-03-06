@@ -14,7 +14,7 @@
    <extension
          point="de.uni_stuttgart.iste.cowolf.ui.model.qosAnalyzeWizardExtension">
       <qosAnalyzeWizard
-            class="de.uni_stuttgart.iste.cowolf.ui.model.fault_tree.analyze.FaultTreeAnalyzeWizard">
+            class="de.uni_stuttgart.iste.cowolf.ui.analyze.fault_tree.xfta.analyze.FaultTreeAnalyzeWizard">
       </qosAnalyzeWizard>
    </extension>
 
