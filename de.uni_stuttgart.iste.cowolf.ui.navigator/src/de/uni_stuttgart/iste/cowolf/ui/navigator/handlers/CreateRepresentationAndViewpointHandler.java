@@ -300,7 +300,7 @@ public class CreateRepresentationAndViewpointHandler extends AbstractHandler {
 							stringBuilder.append(line);
 
 						}
-
+						reader.close();
 						String result = stringBuilder.toString();
 						result = result.replace(source.getName()
 								.toString(), newFile.getName()
@@ -366,7 +366,7 @@ public class CreateRepresentationAndViewpointHandler extends AbstractHandler {
 								stringBuilder1.append(line1);
 
 							}
-
+							reader1.close();
 							String result1 = stringBuilder1.toString();
 							result1 = result1.replace(newFile
 									.getProjectRelativePath().toString(),
@@ -493,7 +493,7 @@ public class CreateRepresentationAndViewpointHandler extends AbstractHandler {
 							stringBuilder.append(line);
 
 						}
-
+						reader.close();
 						String result = stringBuilder.toString();
 						result = result.replace(source.getProjectRelativePath()
 								.toString(), newFile.getProjectRelativePath()
@@ -555,7 +555,7 @@ public class CreateRepresentationAndViewpointHandler extends AbstractHandler {
 								stringBuilder1.append(line1);
 
 							}
-
+							reader1.close();
 							String result1 = stringBuilder1.toString();
 							result1 = result1.replace(newFile
 									.getProjectRelativePath().toString(),
